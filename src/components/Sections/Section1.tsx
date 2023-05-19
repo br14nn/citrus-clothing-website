@@ -5,7 +5,7 @@ import F001 from "../../assets/images/f001.webp";
 
 export default function () {
 	return (
-		<section className="relative flex h-[900px] w-full min-w-[350px] flex-col gap-y-[3.5rem] bg-my-dark p-[4.375rem] tablet:gap-y-[3rem] tablet:px-[1.875rem] tablet:py-[3.125rem] mobile:h-[800px] ">
+		<section className="relative flex w-full min-w-[350px] flex-col gap-y-[3.5rem] bg-my-dark p-[70px] tablet:gap-y-[48px] tablet:px-[30px] tablet:py-[50px] mobile:pb-[50px] mobile:pt-[100px]">
 			<Navbar />
 
 			<LandingPageBigImage />
@@ -17,7 +17,7 @@ export default function () {
 				</p>
 
 				<a
-					className="flex w-fit flex-row items-center gap-[1.563rem] text-[1.5rem] font-bold text-my-white"
+					className="flex w-fit flex-row items-center gap-[25px] text-[1.5rem] font-bold text-my-white"
 					href="#"
 				>
 					<p>View Collection</p>
@@ -28,7 +28,7 @@ export default function () {
 			</div>
 
 			<img
-				className="absolute bottom-0 left-0 right-0 mx-auto block w-[clamp(300px,26.528vw,382px)] tablet:mx-0 tablet:ml-auto tablet:mr-[3rem] mobile:hidden"
+				className="absolute bottom-0 left-0 right-0 mx-auto block w-[clamp(250px,26.528vw,382px)] tablet:mx-0 tablet:ml-auto tablet:mr-[3rem] mobile:hidden"
 				src={F001}
 				alt="Clothing model"
 			/>

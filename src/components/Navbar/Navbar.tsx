@@ -1,39 +1,41 @@
-import NavItem from "./NavItem";
-import UserSvg from "../../assets/svg/user.svg";
-import BagSvg from "../../assets/svg/bag.svg";
-import MenuSvg from "../../assets/svg/menu.svg";
+import { useAnimate } from "framer-motion";
+
+import OpenNavButton from "./OpenNavButton";
+
+import NavBackground from "./NavBackground";
+import NavItemsContainer from "./NavItemsContainer";
 
 export default function () {
+	const [scope, animate] = useAnimate();
+
+	const openNavigationMenu = () => {
+		animate("#navMenu", { right: "0vw" });
+		animate("#navBackground", { display: "block" });
+	};
+
+	const closeNavigationMenu = () => {
+		animate("#navBackground", { display: "none" });
+		animate("#navMenu", { right: "-100vw" });
+	};
+
 	return (
-		<nav className="text-my-white/50">
-			<div className="hidden flex-row mobile:flex">
+		<nav
+			ref={scope}
+			className="text-my-white/50 mobile:fixed mobile:left-0 mobile:right-0 mobile:top-0 mobile:z-50 mobile:w-full mobile:bg-my-dark"
+		>
+			<div className="hidden mobile:flex mobile:flex-row mobile:justify-between mobile:p-[30px]">
 				<div className="font-dosis flex flex-row items-center gap-x-[0.25rem] leading-none">
 					<p className="font-bold text-my-green/70">CITRUS</p>
 					<p>|</p>
 					<p>PST. 2023</p>
 				</div>
-				<button className="ml-auto ">
-					<img src={MenuSvg} alt="Menu.svg" />
-				</button>
+
+				<OpenNavButton onClick={openNavigationMenu} />
 			</div>
 
-			<div className="flex flex-row items-center mobile:hidden">
-				<ul className="font-dosis flex flex-row items-center justify-center gap-[5rem] tablet:gap-[3rem] ">
-					<NavItem>HOME</NavItem>
-					<NavItem>SHOP</NavItem>
-					<NavItem>PRODUCTS</NavItem>
-					<NavItem>ABOUT US</NavItem>
-				</ul>
+			<NavItemsContainer onClickCloseNavButton={closeNavigationMenu} />
 
-				<ul className="ml-auto flex flex-row items-center justify-center gap-[2.5rem]">
-					<NavItem>
-						<img src={UserSvg} alt="user.svg" />
-					</NavItem>
-					<NavItem>
-						<img src={BagSvg} alt="bag.svg" />
-					</NavItem>
-				</ul>
-			</div>
+			<NavBackground onClick={closeNavigationMenu} />
 		</nav>
 	);
 }

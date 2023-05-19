@@ -19,6 +19,7 @@ export default {
 			screens: {
 				tablet: { max: "1024px" },
 				mobile: { max: "600px" },
+				"mobile-xs": { max: "360px" },
 			},
 		},
 	},

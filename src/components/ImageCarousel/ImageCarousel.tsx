@@ -33,7 +33,7 @@ export default function () {
 	};
 
 	return (
-		<div className="relative m-auto hidden h-[550px] w-[300px] bg-my-dark tablet:block">
+		<div className="relative mx-auto mt-[30px] hidden h-[550px] w-[300px] bg-my-dark tablet:block">
 			{showImage === 0 && <ImageItem extraClass={`bg-[-60px_-50px]`} backgroundImage={F002} />}
 			{showImage === 1 && <ImageItem extraClass={`bg-[-100px_0px]`} backgroundImage={F003} />}
 			{showImage === 2 && <ImageItem extraClass={`bg-[-110px_-80px]`} backgroundImage={F004} />}
