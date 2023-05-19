@@ -5,7 +5,7 @@ import F001 from "../../assets/images/f001.webp";
 
 export default function () {
 	return (
-		<section className="relative flex w-full min-w-[350px] flex-col gap-y-[3.5rem] bg-my-dark p-[70px] tablet:gap-y-[48px] tablet:px-[30px] tablet:py-[50px] mobile:pb-[50px] mobile:pt-[100px]">
+		<section className="relative flex w-full min-w-[360px] flex-col gap-y-[3.5rem] bg-my-dark p-[70px] tablet:gap-y-[48px] tablet:px-[30px] tablet:py-[50px] mobile:pb-[50px] mobile:pt-[100px]">
 			<Navbar />
 
 			<LandingPageBigImage />

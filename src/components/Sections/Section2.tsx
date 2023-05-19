@@ -10,7 +10,7 @@ export default function () {
 		<section className="relative flex w-full flex-col p-[4.375rem] tablet:p-[1.875rem]">
 			<div className="flex flex-row tablet:gap-y-[0.5rem] mobile:flex-col">
 				<p className="font-roboto-condensed text-my-dark/50">&#40;Lookbooks&#41;</p>
-				<h1 className="font-anton ml-[100px] text-[clamp(60px,5.556vw,80px)] leading-none text-my-dark tablet:ml-[50px] tablet:text-[clamp(28px,6.7vw,80px)] mobile:ml-0 mobile:text-[clamp(28px,5vw,50px)]">
+				<h1 className="font-anton ml-[100px] min-w-[300px] text-[clamp(60px,5.556vw,80px)] leading-none text-my-dark tablet:ml-[50px] tablet:text-[clamp(28px,6.7vw,80px)] mobile:ml-0 mobile:text-[clamp(28px,5vw,50px)]">
 					UNLEASH YOUR STYLE AND <br /> EMBRACE YOUR CONFIDENCE
 				</h1>
 			</div>

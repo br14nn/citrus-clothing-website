@@ -29,11 +29,19 @@ export default function (props: NavItemsContainerProps) {
 			<ul className="ml-auto flex flex-row items-center justify-center gap-[2.5rem] mobile:mx-auto mobile:mt-[30px] mobile:justify-start mobile:gap-[50px]">
 				<NavItem>
 					<img className="block mobile:hidden" src={UserSvg} alt="user image" />
-					<img className="hidden mobile:block" src={UserDarkSvg} alt="user image" />
+					<img
+						className="hidden h-[26px] w-[20px] mobile:block mobile:min-h-[26px] mobile:min-w-[20px]"
+						src={UserDarkSvg}
+						alt="user image"
+					/>
 				</NavItem>
 				<NavItem>
 					<img className="block mobile:hidden" src={BagSvg} alt="bag image" />
-					<img className="hidden mobile:block" src={BagDarkSvg} alt="bag image" />
+					<img
+						className=":w-[26px] hidden h-[28px] mobile:block mobile:min-h-[28px] mobile:min-w-[26px]"
+						src={BagDarkSvg}
+						alt="bag image"
+					/>
 				</NavItem>
 			</ul>
 		</motion.div>
