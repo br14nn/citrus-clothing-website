@@ -1,21 +1,37 @@
+import { useEffect, useRef } from "react";
 import { useAnimate } from "framer-motion";
 
 import OpenNavButton from "./OpenNavButton";
-
 import NavBackground from "./NavBackground";
 import NavItemsContainer from "./NavItemsContainer";
 
 export default function () {
+	const navIsOpen = useRef<boolean>(false);
 	const [scope, animate] = useAnimate();
+
+	useEffect(() => {
+		const windowResized = () => {
+			if (window.innerWidth >= 600 && navIsOpen.current === true) {
+				//closoe the navbar
+				closeNavigationMenu();
+			}
+		};
+
+		window.addEventListener("resize", windowResized);
+	});
 
 	const openNavigationMenu = () => {
 		animate("#navMenu", { right: "0vw" });
 		animate("#navBackground", { display: "block" });
+
+		navIsOpen.current = true;
 	};
 
 	const closeNavigationMenu = () => {
 		animate("#navBackground", { display: "none" });
 		animate("#navMenu", { right: "-100vw" });
+
+		navIsOpen.current = false;
 	};
 
 	return (

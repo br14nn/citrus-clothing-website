@@ -7,15 +7,16 @@ import Section2Image from "../Section2Image.tsx/Section2Image";
 
 export default function () {
 	return (
-		<section className="relative flex w-full flex-col p-[4.375rem] tablet:p-[1.875rem]">
+		<section className="relative flex w-full flex-col p-[70px] tablet:p-[30px]">
 			<div className="flex flex-row tablet:gap-y-[0.5rem] mobile:flex-col">
-				<p className="font-roboto-condensed text-my-dark/50">&#40;Lookbooks&#41;</p>
+				<p className="font-roboto-condensed text-my-dark/50">&#40;LOOKBOOKS&#41;</p>
 				<h1 className="font-anton ml-[100px] min-w-[300px] text-[clamp(60px,5.556vw,80px)] leading-none text-my-dark tablet:ml-[50px] tablet:text-[clamp(28px,6.7vw,80px)] mobile:ml-0 mobile:text-[clamp(28px,5vw,50px)]">
-					UNLEASH YOUR STYLE AND <br /> EMBRACE YOUR CONFIDENCE
+					MI EGET MAURIS PHARETRA <br />
+					ET ULTRICES NEQUE ORNARE
 				</h1>
 			</div>
 
-			<div className="my-auto mt-[70px] grid grid-cols-4 justify-items-center tablet:hidden">
+			<div className="my-auto mt-[70px] flex flex-row justify-center gap-x-[32px] desktop:justify-between desktop:gap-0 tablet:hidden ">
 				<Section2Image extraClass={`bg-[-80px_-60px]`} imageUrl={F002} />
 				<Section2Image extraClass={`bg-[-130px_0px]`} imageUrl={F003} />
 				<Section2Image extraClass={`bg-[-110px_-100px]`} imageUrl={F004} />

@@ -8,11 +8,12 @@ type Section2ImageProps = {
 export default function (props: Section2ImageProps) {
 	//h-[525px] w-[300px]
 	return (
-		<div
+		<a
+			href="#"
 			className={`${props.extraClass} relative h-[525px] w-[clamp(200px,20.833vw,300px)] bg-auto`}
 			style={{ backgroundImage: `url(${props.imageUrl})` }}
 		>
 			<Description />
-		</div>
+		</a>
 	);
 }

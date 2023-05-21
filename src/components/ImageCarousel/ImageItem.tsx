@@ -5,7 +5,7 @@ type ImageItemProps = {
 
 export default function (props: ImageItemProps) {
 	return (
-		<>
+		<a href="#">
 			<div
 				className={`${props.extraClass} h-full w-full bg-auto bg-no-repeat`}
 				style={{ backgroundImage: `url(${props.backgroundImage})` }}
@@ -14,6 +14,6 @@ export default function (props: ImageItemProps) {
 				<p>Faucibus scelerisque</p>
 				<p>Auctor eu augue 2023</p>
 			</div>
-		</>
+		</a>
 	);
 }

@@ -9,7 +9,7 @@ export default function () {
 			<div className="relative hidden flex-row mobile:flex">
 				<img className="w-[clamp(240px,66.667vw,300px)]" src={BrandNameMobileSvg} alt="CITRUS" />
 				<img
-					className="absolute bottom-0 left-0 right-0 ml-auto h-auto w-[clamp(160px,44.444vw,260px)]"
+					className="absolute bottom-0 left-0 right-0 ml-auto h-auto w-[clamp(160px,44.444vw,230px)]"
 					src={F001}
 					alt="Model"
 				/>

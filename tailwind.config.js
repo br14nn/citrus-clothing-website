@@ -17,6 +17,8 @@ export default {
 				"test-1": "calc(900px - 100vw)",
 			},
 			screens: {
+				"desktop-xl": { max: "1660px" },
+				desktop: { max: "1440px" },
 				tablet: { max: "1024px" },
 				mobile: { max: "600px" },
 				"mobile-xs": { max: "360px" },
