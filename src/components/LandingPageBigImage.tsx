@@ -1,6 +1,6 @@
 import BrandNameSvg from "../assets/svg/brandName.svg";
 import BrandNameMobileSvg from "../assets/svg/brandNameMobile.svg";
-import F001 from "../assets/images/f001.webp";
+import A001 from "../assets/images/A001.webp";
 
 export default function () {
 	return (
@@ -10,7 +10,7 @@ export default function () {
 				<img className="w-[clamp(240px,66.667vw,300px)]" src={BrandNameMobileSvg} alt="CITRUS" />
 				<img
 					className="absolute bottom-0 left-0 right-0 ml-auto h-auto w-[clamp(160px,44.444vw,230px)]"
-					src={F001}
+					src={A001}
 					alt="Model"
 				/>
 			</div>

@@ -9,6 +9,7 @@ body,
 #root {
 	width: 100%;
 	height: 100%;
+	overflow: overlay;
 }
 
 .font-dosis {
@@ -21,4 +22,16 @@ body,
 
 .font-anton {
 	font-family: "Anton", sans-serif;
+}
+
+.drag-select-disabled {
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.test {
+	overflow: auto;
 }

@@ -1,7 +1,7 @@
 import LandingPageBigImage from "../LandingPageBigImage";
 import Navbar from "../Navbar/Navbar";
-import RightArrowSvg from "../../assets/svg/right-arrow.svg";
-import F001 from "../../assets/images/f001.webp";
+import ViewCollectionArrow from "../../assets/svg/viewCollectionArrow.svg";
+import A001 from "../../assets/images/A001.webp";
 
 export default function () {
 	return (
@@ -21,7 +21,7 @@ export default function () {
 					href="#"
 				>
 					<p>View Collection</p>
-					<img src={RightArrowSvg} alt="right arrow" />
+					<img src={ViewCollectionArrow} alt="right arrow" />
 				</a>
 
 				<p className="ml-auto block w-fit text-my-white/50 tablet:ml-0 mobile:hidden">PST. 2023</p>
@@ -29,7 +29,7 @@ export default function () {
 
 			<img
 				className="absolute bottom-0 left-0 right-0 mx-auto block w-[clamp(250px,26.528vw,382px)] tablet:mx-0 tablet:ml-auto tablet:mr-[3rem] mobile:hidden"
-				src={F001}
+				src={A001}
 				alt="Clothing model"
 			/>
 		</section>
