@@ -8,10 +8,8 @@ import LinkCardContainer from "./LinkCardContainer";
 import ScrollButton from "./ScrollButton";
 
 export default function () {
-	let scrollElement;
-
 	const scrollButtonOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-		scrollElement = document.getElementById("slider");
+		const scrollElement = document.getElementById("sliderLookbook");
 
 		if (e.currentTarget.name === "forwardScroll") {
 			scrollElement?.scrollBy({ behavior: "smooth", left: 1 });
@@ -21,10 +19,12 @@ export default function () {
 	};
 
 	return (
-		<div className="relative mx-auto mt-[70px] h-fit w-fit mobile:mt-[2rem]">
+		<div className="relative mx-auto mt-[70px] flex h-fit w-fit flex-row items-center gap-[20px] mobile:mt-[2rem] mobile:gap-[9px]">
+			<ScrollButton name="backwardScroll" onClick={scrollButtonOnClick} imgSrc={LeftArrow} />
+
 			<div
-				className="flex w-[90.278vw] max-w-[1300px] snap-x snap-mandatory justify-between gap-x-[30px] overflow-auto  overflow-x-auto text-green-200 scrollbar:h-2 scrollbar-track:rounded-lg scrollbar-thumb:rounded-lg scrollbar-thumb:bg-my-dark/80 hover:scrollbar-thumb:bg-my-dark/100 tablet:w-[650px] tablet:gap-x-[50px] mobile-xl:w-[300px] mobile-xl:gap-x-[0px]"
-				id="slider"
+				className="mx-auto flex w-[90.278vw] max-w-[1300px] snap-x snap-mandatory gap-x-[20px] overflow-auto overflow-x-auto scroll-smooth text-green-200 scrollbar:h-2 scrollbar-track:rounded-lg scrollbar-thumb:rounded-lg scrollbar-thumb:bg-my-dark/80 hover:scrollbar-thumb:bg-my-dark/100 tablet:w-[640px] tablet:gap-x-[20px] mobile-xl:w-[310px] mobile-xl:gap-x-[0px] mobile-xs-1:min-w-[250px] mobile-xs-1:max-w-[250px]"
+				id="sliderLookbook"
 			>
 				<LinkCardContainer
 					imagePosition="bg-[-30px_-80px]"
@@ -52,18 +52,7 @@ export default function () {
 				/>
 			</div>
 
-			<ScrollButton
-				extraClass="left-[10px]"
-				name="backwardScroll"
-				onClick={scrollButtonOnClick}
-				imgSrc={LeftArrow}
-			/>
-			<ScrollButton
-				extraClass="right-[10px]"
-				name="forwardScroll"
-				onClick={scrollButtonOnClick}
-				imgSrc={RightArrow}
-			/>
+			<ScrollButton name="forwardScroll" onClick={scrollButtonOnClick} imgSrc={RightArrow} />
 		</div>
 	);
 }

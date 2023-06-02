@@ -1,5 +1,3 @@
-import colors from "tailwindcss/colors";
-
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -22,11 +20,12 @@ export default {
 				"desktop-xl": { max: "1660px" },
 				desktop: { max: "1440px" },
 				tablet: { max: "1024px" },
-				"mobile-xl": { max: "700px" },
+				"mobile-xl": { max: "850px" },
 				mobile: { max: "600px" },
+				"mobile-xs-1": { max: "450px" },
 				"mobile-xs": { max: "360px" },
 			},
 		},
 	},
-	plugins: [require("./src/plugins/scrollbar")],
+	plugins: [require("tailwind-scrollbar-plugin")],
 };

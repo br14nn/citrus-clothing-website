@@ -1,4 +1,4 @@
-import { useAnimate } from "framer-motion";
+import { useAnimate, motion } from "framer-motion";
 
 import LinkCardFilter from "./LinkCardFilter";
 
@@ -19,15 +19,15 @@ export default function (props: LinkCardImageProps) {
 	};
 
 	return (
-		<a
+		<motion.a
 			className={`${props.imagePosition}  block h-full w-full bg-auto bg-no-repeat`}
 			style={{ backgroundImage: `url(${props.imageUrl})` }}
 			href="#"
-			onMouseEnter={showLinkCardFilter}
-			onMouseLeave={hideLinkCardFilter}
+			onHoverStart={showLinkCardFilter}
+			onHoverEnd={hideLinkCardFilter}
 			ref={scope}
 		>
 			<LinkCardFilter />
-		</a>
+		</motion.a>
 	);
 }
