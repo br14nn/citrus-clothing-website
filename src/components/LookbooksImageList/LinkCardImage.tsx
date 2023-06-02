@@ -11,11 +11,11 @@ export default function (props: LinkCardImageProps) {
 	const [scope, animate] = useAnimate();
 
 	const showLinkCardFilter = () => {
-		animate("#linkCardFilter", { opacity: 1 });
+		animate(".linkCardFilter", { opacity: 1 });
 	};
 
 	const hideLinkCardFilter = () => {
-		animate("#linkCardFilter", { opacity: 0 });
+		animate(".linkCardFilter", { opacity: 0 });
 	};
 
 	return (

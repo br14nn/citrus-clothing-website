@@ -12,8 +12,8 @@ export default function (props: Section3ButtonContainerProps) {
 		>
 			<div className="flex flex-row items-center gap-[8px]">
 				<ButtonFilter>All</ButtonFilter>
-				<ButtonFilter>Men</ButtonFilter>
-				<ButtonFilter>Women</ButtonFilter>
+				<ButtonFilter>Man</ButtonFilter>
+				<ButtonFilter>Woman</ButtonFilter>
 			</div>
 
 			<ViewCollectionLink />
