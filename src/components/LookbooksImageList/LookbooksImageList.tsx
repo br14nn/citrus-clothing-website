@@ -12,9 +12,9 @@ export default function () {
 		const scrollElement = document.getElementById("sliderLookbook");
 
 		if (e.currentTarget.name === "forwardScroll") {
-			scrollElement?.scrollBy({ behavior: "smooth", left: 1 });
-		} else {
-			scrollElement?.scrollBy({ behavior: "smooth", left: -1 });
+			scrollElement?.scrollBy({ left: 300 });
+		} else if (e.currentTarget.name === "backwardScroll") {
+			scrollElement?.scrollBy({ left: -300 });
 		}
 	};
 

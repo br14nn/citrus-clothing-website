@@ -16,11 +16,9 @@ export default function () {
 		const scrollElement = document.getElementById("sliderCatalog");
 
 		if (e.currentTarget.name === "forwardScroll") {
-			console.log("Should scroll forward");
-			scrollElement?.scrollBy({ behavior: "smooth", left: 1 });
-		} else {
-			console.log("Should scroll backward");
-			scrollElement?.scrollBy({ behavior: "smooth", left: -1 });
+			scrollElement?.scrollBy({ behavior: "smooth", left: 300 });
+		} else if (e.currentTarget.name === "backwardScroll") {
+			scrollElement?.scrollBy({ behavior: "smooth", left: -300 });
 		}
 	};
 
