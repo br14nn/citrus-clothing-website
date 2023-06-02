@@ -19,7 +19,7 @@ export default function () {
 	};
 
 	return (
-		<div className="relative mx-auto mt-[70px] flex h-fit w-fit flex-row items-center gap-[20px] mobile:mt-[2rem] mobile:gap-[9px]">
+		<div className="relative mx-auto mt-[70px] flex h-fit w-full flex-row items-center gap-[20px] tablet:w-fit mobile:mt-[2rem] mobile:gap-[9px]">
 			<ScrollButton name="backwardScroll" onClick={scrollButtonOnClick} imgSrc={LeftArrow} />
 
 			<div

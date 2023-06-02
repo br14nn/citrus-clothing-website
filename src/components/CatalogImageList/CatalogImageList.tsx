@@ -25,7 +25,7 @@ export default function () {
 	};
 
 	return (
-		<div className="relative mx-auto mt-[1rem] flex w-fit flex-row items-center gap-[20px] mobile:gap-[9px]">
+		<div className="relative mx-auto mt-[1rem] flex w-full flex-row items-center gap-[20px] tablet:w-fit mobile:gap-[9px]">
 			<Scrollbutton
 				name="backwardScroll"
 				onClick={scrollButtonOnClick}
@@ -34,7 +34,7 @@ export default function () {
 			/>
 
 			<div
-				className="flex snap-x snap-mandatory flex-row gap-[20px] overflow-hidden overflow-x-auto scroll-smooth scrollbar:h-2 scrollbar-track:rounded-lg scrollbar-thumb:rounded-lg scrollbar-thumb:bg-my-dark/80 hover:scrollbar-thumb:bg-my-dark/100 desktop:w-[90.278vw] desktop:max-w-[1300px] tablet:w-[640px] mobile-xl:w-[310px] mobile-xl:gap-0 mobile-xs-1:min-w-[250px] mobile-xs-1:max-w-[250px]"
+				className="mx-auto flex snap-x snap-mandatory flex-row gap-[20px] overflow-hidden overflow-x-auto scroll-smooth scrollbar:h-2 scrollbar-track:rounded-lg scrollbar-thumb:rounded-lg scrollbar-thumb:bg-my-dark/80 hover:scrollbar-thumb:bg-my-dark/100 desktop:w-[90.278vw] desktop:max-w-[1300px] tablet:w-[640px] mobile-xl:w-[310px] mobile-xl:gap-0 mobile-xs-1:min-w-[250px] mobile-xs-1:max-w-[250px]"
 				id="sliderCatalog"
 			>
 				<ImageLIstItem
