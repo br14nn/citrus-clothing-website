@@ -1,6 +1,7 @@
 import { useAnimate, motion } from "framer-motion";
 import ImageItemFilter from "./ImageItemFilter";
 import ImageItemDescription from "./ImageItemDescription";
+import RedirectButton from "./RedirectButton";
 
 type ImageLIstItemProps = {
 	imagePos_1: string;
@@ -35,35 +36,53 @@ export default function (props: ImageLIstItemProps) {
 	};
 
 	return (
-		<div ref={scope} className="flex snap-start snap-always flex-col gap-[20px]">
+		<div ref={scope} className="flex snap-start snap-always flex-col gap-y-[20px]">
 			<motion.a
-				className={`${props.imagePos_1} relative h-[350px] w-[310px] bg-gray-400 bg-auto bg-no-repeat mobile-xs-1:w-[250px]`}
+				className={`relative h-[350px] w-[310px] mobile-xs-1:w-[250px]`}
 				onHoverStart={showFilterOnHover}
 				onHoverEnd={hideFilterOnLeave}
-				style={{ backgroundImage: `url(${props.imageUrl_1})` }}
 				href="#"
-				aria-label={props.ariaLabel_1}
 			>
+				<img
+					className={`${props.imagePos_1} h-full w-full object-none`}
+					src={props.imageUrl_1}
+					loading="lazy"
+					alt={props.ariaLabel_1}
+					aria-label={props.ariaLabel_1}
+				/>
+
 				<ImageItemDescription
+					extraClass="z-10"
 					productName={props.productName_1}
 					productPrice={props.productPrice_1}
 				/>
+
+				<RedirectButton extraClass="absolute bottom-0 right-0 z-10" />
 
 				<ImageItemFilter extraClass={"imageItemFilter"} />
 			</motion.a>
 
 			<motion.a
-				className={`${props.imagePos_2} relative h-[350px] w-[310px] bg-gray-400 bg-auto bg-no-repeat mobile-xs-1:w-[250px]`}
+				className={`relative h-[350px] w-[310px] mobile-xs-1:w-[250px]`}
 				onHoverStart={showFilterOnHover_1}
 				onHoverEnd={hideFilterOnLeave_1}
-				style={{ backgroundImage: `url(${props.imageUrl_2})` }}
 				href="#"
-				aria-label={props.ariaLabel_2}
 			>
+				<img
+					className={`${props.imagePos_2} h-full w-full object-none`}
+					src={props.imageUrl_2}
+					loading="lazy"
+					alt={props.ariaLabel_2}
+					aria-label={props.ariaLabel_2}
+				/>
+
 				<ImageItemDescription
+					extraClass="z-10"
 					productName={props.productName_2}
 					productPrice={props.productPrice_2}
 				/>
+
+				<RedirectButton extraClass="absolute bottom-0 right-0" />
 
 				<ImageItemFilter extraClass={"imageItemFilter_1"} />
 			</motion.a>

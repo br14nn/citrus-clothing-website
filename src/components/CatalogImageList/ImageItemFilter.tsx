@@ -11,7 +11,6 @@ export default function (props: ImageItemFilterProps) {
 				className={`${props.extraClass} absolute inset-0 bg-my-dark/50 backdrop-blur-[1px]`}
 				initial={{ opacity: 0 }}
 			/>
-			;
 		</>
 	);
 }

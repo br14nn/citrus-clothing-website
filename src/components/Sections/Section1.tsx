@@ -29,6 +29,7 @@ export default function () {
 
 			<img
 				className="absolute bottom-0 left-0 right-0 mx-auto block w-[clamp(250px,26.528vw,382px)] tablet:mx-0 tablet:ml-auto tablet:mr-[3rem] mobile:hidden"
+				loading="lazy"
 				src={A001}
 				alt="Clothing model"
 			/>

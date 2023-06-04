@@ -1,10 +1,12 @@
 import { useAnimate, motion } from "framer-motion";
-
 import LinkCardFilter from "./LinkCardFilter";
+import LinkCardDescription from "./LinkCardDescription";
 
 type LinkCardImageProps = {
 	imagePosition: string;
 	imageUrl: string;
+	title: string;
+	title_1: string;
 };
 
 export default function (props: LinkCardImageProps) {
@@ -20,13 +22,20 @@ export default function (props: LinkCardImageProps) {
 
 	return (
 		<motion.a
-			className={`${props.imagePosition}  block h-full w-full bg-auto bg-no-repeat`}
-			style={{ backgroundImage: `url(${props.imageUrl})` }}
 			href="#"
 			onHoverStart={showLinkCardFilter}
 			onHoverEnd={hideLinkCardFilter}
 			ref={scope}
 		>
+			<img
+				className={`${props.imagePosition} h-full w-full object-none`}
+				loading="lazy"
+				src={props.imageUrl}
+				alt="Lookbooks image"
+			/>
+
+			<LinkCardDescription extraClass="z-10" title={props.title} title_1={props.title_1} />
+
 			<LinkCardFilter />
 		</motion.a>
 	);

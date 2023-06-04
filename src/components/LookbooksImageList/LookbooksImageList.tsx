@@ -12,14 +12,14 @@ export default function () {
 		const scrollElement = document.getElementById("sliderLookbook");
 
 		if (e.currentTarget.name === "forwardScroll") {
-			scrollElement?.scrollBy({ left: 300 });
+			scrollElement?.scrollBy({ behavior: "smooth", left: 300 });
 		} else if (e.currentTarget.name === "backwardScroll") {
-			scrollElement?.scrollBy({ left: -300 });
+			scrollElement?.scrollBy({ behavior: "smooth", left: -300 });
 		}
 	};
 
 	return (
-		<div className="relative mx-auto mt-[70px] flex h-fit w-full flex-row items-center gap-[20px] tablet:w-fit mobile:mt-[2rem] mobile:gap-[9px]">
+		<div className="relative mx-auto mt-[50px] flex h-fit w-full flex-row items-center gap-[20px] tablet:w-fit mobile:mt-[32px] mobile:gap-[9px]">
 			<ScrollButton name="backwardScroll" onClick={scrollButtonOnClick} imgSrc={LeftArrow} />
 
 			<div
@@ -27,28 +27,28 @@ export default function () {
 				id="sliderLookbook"
 			>
 				<LinkCardContainer
-					imagePosition="bg-[-30px_-80px]"
+					imagePosition="object-[-30px_-80px]"
 					imageUrl={B001}
-					title1="ALIQUAM NULLA"
-					title2="EGET ALIQUET 2023"
+					title="ALIQUAM NULLA"
+					title_1="EGET ALIQUET 2023"
 				/>
 				<LinkCardContainer
-					imagePosition="bg-[-100px_0px]"
+					imagePosition="object-[-100px_0px]"
 					imageUrl={B002}
-					title1="EGET ALIQUET"
-					title2="FACILISI CRAS 2023"
+					title="EGET ALIQUET"
+					title_1="FACILISI CRAS 2023"
 				/>
 				<LinkCardContainer
-					imagePosition="bg-[-110px_-100px]"
+					imagePosition="object-[-110px_-100px]"
 					imageUrl={B003}
-					title1="MASSA TEMPOR"
-					title2="ALIQUAM NULLA 2023"
+					title="MASSA TEMPOR"
+					title_1="ALIQUAM NULLA 2023"
 				/>
 				<LinkCardContainer
-					imagePosition="bg-[-70px_-40px]"
+					imagePosition="object-[-70px_-40px]"
 					imageUrl={B004}
-					title1="FACILISI CRAS"
-					title2="MASSA TEMPOR 2023"
+					title="FACILISI CRAS"
+					title_1="MASSA TEMPOR 2023"
 				/>
 			</div>
 
