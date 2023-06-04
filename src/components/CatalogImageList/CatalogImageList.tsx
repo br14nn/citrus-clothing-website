@@ -36,52 +36,52 @@ export default function () {
 				id="sliderCatalog"
 			>
 				<ImageLIstItem
-					imagePos_1="object-[-70px_-65px]"
-					imageUrl_1={C001}
-					ariaLabel_1="Product Display #01"
+					catalogImagePosition="object-[-70px_-65px]"
+					catalogImageUrl={C001}
+					catalogAlt="Product Display #01"
+					productName="FACILISIS LEO"
+					productPrice="$ 19.99"
+					catalogImagePosition_1="object-[0px_0px] mobile-xs-1:object-[-35px_0px]"
+					catalogImageUrl_1={C005}
+					catalogAlt_1="Product Display #05"
 					productName_1="FACILISIS LEO"
 					productPrice_1="$ 19.99"
-					imagePos_2="object-[0px_0px] mobile-xs-1:object-[-35px_0px]"
-					imageUrl_2={C005}
-					ariaLabel_2="Product Display #05"
-					productName_2="FACILISIS LEO"
-					productPrice_2="$ 19.99"
 				/>
 				<ImageLIstItem
-					imagePos_1="object-[0px_-100px] mobile-xs-1:object-[-30px_-100px]"
-					imageUrl_1={C002}
-					ariaLabel_1="Product Display #02"
+					catalogImagePosition="object-[0px_-100px] mobile-xs-1:object-[-30px_-100px]"
+					catalogImageUrl={C002}
+					catalogAlt="Product Display #02"
+					productName="TURPIS EGESTAS"
+					productPrice="$ 24.99"
+					catalogImagePosition_1="object-[0px_0px] mobile-xs-1:object-[-30px_0px]"
+					catalogImageUrl_1={C006}
+					catalogAlt_1="Product Display #06"
 					productName_1="TURPIS EGESTAS"
 					productPrice_1="$ 24.99"
-					imagePos_2="object-[0px_0px] mobile-xs-1:object-[-30px_0px]"
-					imageUrl_2={C006}
-					ariaLabel_2="Product Display #06"
-					productName_2="TURPIS EGESTAS"
-					productPrice_2="$ 24.99"
 				/>
 				<ImageLIstItem
-					imagePos_1="object-[0px_0px] mobile-xs-1:object-[-35px_0px]"
-					imageUrl_1={C003}
-					ariaLabel_1="Product Display #03"
+					catalogImagePosition="object-[0px_0px] mobile-xs-1:object-[-35px_0px]"
+					catalogImageUrl={C003}
+					catalogAlt="Product Display #03"
+					productName="ET MAGNIS"
+					productPrice="$ 15.99"
+					catalogImagePosition_1="object-[0px_0px]"
+					catalogImageUrl_1={C007}
+					catalogAlt_1="Product Display #07"
 					productName_1="ET MAGNIS"
 					productPrice_1="$ 15.99"
-					imagePos_2="object-[0px_0px]"
-					imageUrl_2={C007}
-					ariaLabel_2="Product Display #07"
-					productName_2="ET MAGNIS"
-					productPrice_2="$ 15.99"
 				/>
 				<ImageLIstItem
-					imagePos_1="object-[-50px_0px]"
-					imageUrl_1={C004}
-					ariaLabel_1="Product Display #04"
+					catalogImagePosition="object-[-50px_0px]"
+					catalogImageUrl={C004}
+					catalogAlt="Product Display #04"
+					productName="LACUS VEL"
+					productPrice="$ 34.99"
+					catalogImagePosition_1="object-[-60px_-40px]"
+					catalogImageUrl_1={C008}
+					catalogAlt_1="Product Display #08"
 					productName_1="LACUS VEL"
 					productPrice_1="$ 34.99"
-					imagePos_2="object-[-60px_-40px]"
-					imageUrl_2={C008}
-					ariaLabel_2="Product Display #08"
-					productName_2="LACUS VEL"
-					productPrice_2="$ 34.99"
 				/>
 			</div>
 

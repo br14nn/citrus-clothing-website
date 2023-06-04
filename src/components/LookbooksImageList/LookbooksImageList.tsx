@@ -23,7 +23,7 @@ export default function () {
 			<ScrollButton name="backwardScroll" onClick={scrollButtonOnClick} imgSrc={LeftArrow} />
 
 			<div
-				className="mx-auto flex w-[90.278vw] max-w-[1300px] snap-x snap-mandatory gap-x-[20px] overflow-auto overflow-x-auto scroll-smooth text-green-200 scrollbar:h-2 scrollbar-track:rounded-lg scrollbar-thumb:rounded-lg scrollbar-thumb:bg-my-dark/80 hover:scrollbar-thumb:bg-my-dark/100 tablet:w-[640px] tablet:gap-x-[20px] mobile-xl:w-[310px] mobile-xl:gap-x-[0px] mobile-xs-1:min-w-[250px] mobile-xs-1:max-w-[250px]"
+				className="mx-auto flex w-[90.278vw] max-w-[1300px] snap-x snap-mandatory gap-x-[20px] overflow-hidden overflow-x-auto scroll-smooth text-green-200 scrollbar:h-2 scrollbar-track:rounded-lg scrollbar-thumb:rounded-lg scrollbar-thumb:bg-my-dark/80 hover:scrollbar-thumb:bg-my-dark/100 tablet:w-[640px] tablet:gap-x-[20px] mobile-xl:w-[310px] mobile-xl:gap-x-[0px] mobile-xs-1:min-w-[250px] mobile-xs-1:max-w-[250px]"
 				id="sliderLookbook"
 			>
 				<LinkCardContainer
