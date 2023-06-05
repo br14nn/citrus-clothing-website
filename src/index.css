@@ -12,6 +12,14 @@ body,
 	overflow: overlay;
 }
 
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: transparent !important;
+}
+
 .font-dosis {
 	font-family: "Dosis", sans-serif;
 }
