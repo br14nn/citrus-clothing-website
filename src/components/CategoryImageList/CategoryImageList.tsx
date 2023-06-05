@@ -1,7 +1,7 @@
 import CategoryLinkSet from "./CategoryLinkSet";
 import CategoryLink_1 from "./CategoryLink_1";
-import L from "../../assets/svg/LeftArrow.svg";
-import R from "../../assets/svg/RightArrow.svg";
+import LeftArrow from "../../assets/svg/LeftArrow.svg";
+import RightArrow from "../../assets/svg/RightArrow.svg";
 import D001 from "../../assets/images/D001.webp";
 import D002 from "../../assets/images/D002.webp";
 import D003 from "../../assets/images/D003.webp";
@@ -25,7 +25,7 @@ export default function () {
 			<Scrollbutton
 				onClick={scrollButtonOnClick}
 				name="backwardScroll"
-				imageSrc={L}
+				imageSrc={LeftArrow}
 				alt="backward scroll button"
 			/>
 			<div
@@ -65,7 +65,7 @@ export default function () {
 			<Scrollbutton
 				onClick={scrollButtonOnClick}
 				name="forwardScroll"
-				imageSrc={R}
+				imageSrc={RightArrow}
 				alt="forward scroll button"
 			/>
 		</div>

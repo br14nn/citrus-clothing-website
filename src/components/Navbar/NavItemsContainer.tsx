@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import CloseNavButton from "./CloseNavButton";
 import NavItem from "./NavItem";
-import UserSvg from "../../assets/svg/user.svg";
-import BagSvg from "../../assets/svg/bag.svg";
-import BagDarkSvg from "../../assets/svg/bagDark.svg";
-import UserDarkSvg from "../../assets/svg/userDark.svg";
+import UserIcon from "../../assets/svg/user.svg";
+import BagIcon from "../../assets/svg/bag.svg";
+import BagIconDark from "../../assets/svg/bagDark.svg";
+import UserIconDark from "../../assets/svg/userDark.svg";
+import NavButton from "./NavButton";
 
 type NavItemsContainerProps = {
 	onClickCloseNavButton?: React.MouseEventHandler<HTMLButtonElement>;
@@ -26,24 +27,20 @@ export default function (props: NavItemsContainerProps) {
 				<NavItem>ABOUT US</NavItem>
 			</ul>
 
-			<ul className="ml-auto flex flex-row items-center justify-center gap-[2.5rem] mobile:mx-auto mobile:mt-[30px] mobile:justify-start mobile:gap-[50px]">
-				<NavItem>
-					<img className="block mobile:hidden" src={UserSvg} alt="user image" />
-					<img
-						className="hidden h-[26px] w-[20px] mobile:block mobile:min-h-[26px] mobile:min-w-[20px]"
-						src={UserDarkSvg}
-						alt="user image"
-					/>
-				</NavItem>
-				<NavItem>
-					<img className="block mobile:hidden" src={BagSvg} alt="bag image" />
-					<img
-						className=":w-[26px] hidden h-[28px] mobile:block mobile:min-h-[28px] mobile:min-w-[26px]"
-						src={BagDarkSvg}
-						alt="bag image"
-					/>
-				</NavItem>
-			</ul>
+			<div className="ml-auto flex w-fit flex-row gap-x-[20px] mobile:ml-0 mobile:mt-[30px] mobile:w-full mobile:justify-center mobile:gap-x-[50px]">
+				<NavButton
+					navButtonIconSize={`w-[20px] h-[26px]`}
+					navButtonIcon={UserIcon}
+					navButtonIcon_1={UserIconDark}
+					navButtonAlt="User Icon"
+				/>
+				<NavButton
+					navButtonIconSize={`w-[26px] h-[28px]`}
+					navButtonIcon={BagIcon}
+					navButtonIcon_1={BagIconDark}
+					navButtonAlt="Bag Icon"
+				/>
+			</div>
 		</motion.div>
 	);
 }

@@ -1,6 +1,6 @@
 import LandingPageBigImage from "../LandingPageBigImage";
 import Navbar from "../Navbar/Navbar";
-import ViewCollectionArrow from "../../assets/svg/viewCollectionArrow.svg";
+import ViewCollectionLinkLight from "../ViewCollectionLinkLight.tsx/ViewCollectionLinkLight";
 import A001 from "../../assets/images/A001.webp";
 
 export default function () {
@@ -16,13 +16,7 @@ export default function () {
 					maintaining a timeless appeal.
 				</p>
 
-				<a
-					className="flex w-fit flex-row items-center gap-[25px] text-[1.5rem] font-bold text-my-white"
-					href="#"
-				>
-					<p>View Collection</p>
-					<img className="h-[22px] w-[44px]" src={ViewCollectionArrow} alt="right arrow" />
-				</a>
+				<ViewCollectionLinkLight />
 
 				<p className="ml-auto block w-fit text-my-white/50 tablet:ml-0 mobile:hidden">PST. 2023</p>
 			</div>
