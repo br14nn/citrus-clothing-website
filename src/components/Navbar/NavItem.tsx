@@ -1,6 +1,8 @@
 import { motion, useAnimate } from "framer-motion";
 
 type NavItemProps = {
+	href?: string;
+	onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 	children: React.ReactNode;
 };
 
@@ -30,7 +32,7 @@ export default function (props: NavItemProps) {
 		<li>
 			<motion.a
 				className="relative block leading-none text-my-white/50 mobile:hidden"
-				href="#"
+				href={props.href}
 				ref={scope}
 				onHoverStart={navItemOnHover}
 				onHoverEnd={navItemNotOnHover}
@@ -45,8 +47,9 @@ export default function (props: NavItemProps) {
 
 			<motion.a
 				className="relative hidden leading-none text-my-dark mobile:block"
-				href="#"
+				href={props.href}
 				ref={scopeMobile}
+				onClick={props.onClick}
 				onHoverStart={navItemOnHoverMobile}
 				onHoverEnd={navItemNotOnHoverMobile}
 			>

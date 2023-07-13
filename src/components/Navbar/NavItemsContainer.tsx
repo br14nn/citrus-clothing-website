@@ -8,7 +8,7 @@ import UserIconDark from "../../assets/svg/userDark.svg";
 import NavButton from "./NavButton";
 
 type NavItemsContainerProps = {
-	onClickCloseNavButton?: React.MouseEventHandler<HTMLButtonElement>;
+	onClickCloseNavButton?: React.MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
 };
 
 export default function (props: NavItemsContainerProps) {
@@ -21,10 +21,18 @@ export default function (props: NavItemsContainerProps) {
 			<CloseNavButton onClick={props.onClickCloseNavButton} />
 
 			<ul className="font-dosis flex flex-row items-center justify-center gap-[5rem] tablet:gap-[3rem] mobile:mt-[20px] mobile:flex-col mobile:items-start mobile:gap-[20px] mobile:text-my-dark">
-				<NavItem>HOME</NavItem>
-				<NavItem>SHOP</NavItem>
-				<NavItem>PRODUCTS</NavItem>
-				<NavItem>ABOUT US</NavItem>
+				<NavItem onClick={props.onClickCloseNavButton} href="#home">
+					HOME
+				</NavItem>
+				<NavItem onClick={props.onClickCloseNavButton} href="#">
+					SHOP
+				</NavItem>
+				<NavItem onClick={props.onClickCloseNavButton} href="#products">
+					PRODUCTS
+				</NavItem>
+				<NavItem onClick={props.onClickCloseNavButton} href="#aboutUs">
+					ABOUT US
+				</NavItem>
 			</ul>
 
 			<div className="ml-auto flex w-fit flex-row gap-x-[20px] mobile:ml-0 mobile:mt-[30px] mobile:w-full mobile:justify-center mobile:gap-x-[50px]">

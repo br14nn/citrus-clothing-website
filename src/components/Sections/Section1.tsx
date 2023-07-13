@@ -1,13 +1,13 @@
 import LandingPageBigImage from "../LandingPageBigImage";
-import Navbar from "../Navbar/Navbar";
 import ViewCollectionLinkLight from "../ViewCollectionLinkLight.tsx/ViewCollectionLinkLight";
 import A001 from "../../assets/images/A001.webp";
 
 export default function () {
 	return (
-		<section className="relative flex w-full flex-col gap-y-[3.5rem] bg-my-dark p-[70px] tablet:gap-y-[48px] tablet:px-[30px] tablet:py-[50px] mobile:pb-[50px] mobile:pt-[100px]">
-			<Navbar />
-
+		<section
+			id="home"
+			className="relative flex w-full flex-col gap-y-[3.5rem] bg-my-dark p-[70px] tablet:gap-y-[48px] tablet:px-[30px] tablet:py-[50px]"
+		>
 			<LandingPageBigImage />
 
 			<div className="font-roboto-condensed mt-auto flex flex-col gap-y-[1.5rem] tablet:mt-0">

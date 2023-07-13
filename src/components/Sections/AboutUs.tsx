@@ -5,7 +5,7 @@ import AboutUsItem from "../AboutUsItem/AboutUsItem";
 
 export default function () {
 	return (
-		<div className="relative w-full bg-my-dark p-[70px] tablet:p-[30px]">
+		<section id="aboutUs" className="relative w-full bg-my-dark p-[70px] tablet:p-[30px]">
 			<img className="mx-auto h-auto w-full max-w-[1300px]" src={AboutUs} alt="About Us" />
 			<img
 				className="mx-auto -mt-[100px] block h-auto w-full max-w-[1300px] tablet:-mt-[70px] mobile:-mt-[45px] mobile-xs:hidden"
@@ -50,6 +50,6 @@ export default function () {
 			<footer className="font-roboto-condensed mt-[100px] flex w-full items-center justify-center text-center text-my-white/50 tablet:mt-[50px]">
 				<p>Coded By: Brian V. Vitualla. Not Original Design</p>
 			</footer>
-		</div>
+		</section>
 	);
 }

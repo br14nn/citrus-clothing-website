@@ -37,7 +37,7 @@ export default function () {
 	return (
 		<nav
 			ref={scope}
-			className="text-my-white/50 mobile:fixed mobile:left-0 mobile:right-0 mobile:top-0 mobile:z-50 mobile:w-full mobile:bg-my-dark"
+			className="sticky left-0 right-0 top-0 z-50 mx-auto w-full bg-my-dark px-[70px] py-5 text-my-white/50 mobile:left-0 mobile:right-0 mobile:top-0 mobile:z-50 mobile:w-full mobile:bg-my-dark mobile:px-0 mobile:py-0"
 		>
 			<div className="hidden mobile:flex mobile:flex-row mobile:justify-between mobile:p-[30px]">
 				<div className="font-dosis flex flex-row items-center gap-x-[0.25rem] leading-none">
