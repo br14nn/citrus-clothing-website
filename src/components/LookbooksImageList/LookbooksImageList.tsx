@@ -3,7 +3,7 @@ import B002 from "../../assets/images/B002.webp";
 import B003 from "../../assets/images/B003.webp";
 import B004 from "../../assets/images/B004.webp";
 import RightArrow from "../../assets/svg/RightArrow.svg";
-import LeftArrow from "../../assets/svg/leftArrow.svg";
+import LeftArrow from "../../assets/svg/LeftArrow.svg";
 import LinkCardContainer from "./LinkCardContainer";
 import ScrollButton from "./ScrollButton";
 
