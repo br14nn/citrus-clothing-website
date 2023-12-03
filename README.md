@@ -4,4 +4,4 @@ A front end only clothing website made in react, tailwind, and other libraries.
 
 ## Links
 
-Live: <a href="" target="_blank">Citrus Clothing</a>
+Live: <a href="https://citrus-clothing.netlify.app/" target="_blank">Citrus Clothing</a>
